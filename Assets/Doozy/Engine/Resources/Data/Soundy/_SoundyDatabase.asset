@@ -17,6 +17,7 @@ MonoBehaviour:
   - Example Clicks
   - Example Music
   - Example Slides
+  - GamejamSound
   - General
   SoundDatabases:
   - {fileID: 11400000, guid: 8eba2c230cbe4f84e8ba00ed7ba55028, type: 2}
@@ -24,3 +25,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6efd9700ef4c504f997ee462880e61e, type: 2}
   - {fileID: 11400000, guid: f357811014801dc489af9b0c14c815e3, type: 2}
   - {fileID: 11400000, guid: 60ba0a5e83e7ab74f96cf97611bf7088, type: 2}
+  - {fileID: 11400000, guid: b077eecf8705dbd43aac38fc8363db62, type: 2}
