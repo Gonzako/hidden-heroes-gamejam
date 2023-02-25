@@ -44,12 +44,13 @@ MonoBehaviour:
     type: 2}
   SoundNames:
   - No Sound
+  - Animals, Dog, Bark, Exterior, Big Dog, Howling, Footsteps, Courtyard, Close SND46323
   - Beeps, Appliance, IRobot Roomba E5 Robot Vacuum Cleaner Battery Low SND77823
   - No Sound
   Database:
   - {fileID: -1046038944577203879}
-  - {fileID: 8808804665503477073}
   - {fileID: 8906989414455161862}
+  - {fileID: 8808804665503477073}
 --- !u!114 &8808804665503477073
 MonoBehaviour:
   m_ObjectHideFlags: 0
