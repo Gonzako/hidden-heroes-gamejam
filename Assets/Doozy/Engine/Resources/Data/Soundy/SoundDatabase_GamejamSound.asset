@@ -49,6 +49,7 @@ MonoBehaviour:
   Database:
   - {fileID: -1046038944577203879}
   - {fileID: 8808804665503477073}
+  - {fileID: 8906989414455161862}
 --- !u!114 &8808804665503477073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,4 +79,35 @@ MonoBehaviour:
   SequenceResetTime: 5
   Sounds:
   - AudioClip: {fileID: 8300000, guid: 704e1f79c88bb4565bb406e94aab352c, type: 3}
+    Weight: 1
+--- !u!114 &8906989414455161862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: Animals, Dog, Bark, Exterior, Big Dog, Howling, Footsteps, Courtyard, Close
+    SND46323
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: Animals, Dog, Bark, Exterior, Big Dog, Howling, Footsteps, Courtyard,
+    Close SND46323
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: c1e58642e14e2f84780cb8e874bd7355, type: 3}
     Weight: 1
