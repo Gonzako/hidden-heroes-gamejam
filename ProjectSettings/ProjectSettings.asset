@@ -796,7 +796,7 @@ PlayerSettings:
     PS5: dUI_MANAGER
     QNX: dUI_MANAGER
     Stadia: dUI_MANAGER
-    Standalone: dUI_MANAGER;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED
+    Standalone: dUI_MANAGER;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;UNITY_PIPELINE_URP
     WebGL: dUI_MANAGER
     Windows Store Apps: dUI_MANAGER
     XboxOne: dUI_MANAGER
@@ -891,7 +891,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []

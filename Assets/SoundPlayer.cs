@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Doozy.Engine.Soundy;
 
-public class SoundyTest : MonoBehaviour
+public class SoundPlayer : MonoBehaviour
 {
+    public string Label;
     public SoundyData TestData;
 
     public void Play()
