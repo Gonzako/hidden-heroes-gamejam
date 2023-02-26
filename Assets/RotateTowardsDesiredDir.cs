@@ -29,7 +29,7 @@ public class RotateTowardsDesiredDir : MonoBehaviour
         if (transform.forward != toMove  && turnEnable)
         {
 
-            var targetVect = Vector3.RotateTowards(transform.forward, toMove, rotateSpeed * Mathf.Deg2Rad, 2000f);
+            var targetVect = Vector3.RotateTowards(transform.forward, toMove, rotateSpeed * Mathf.Deg2Rad * Time.deltaTime, 2000f);
             if(targetVect.magnitude < 0.2f) { return; }
             transform.forward = targetVect;
         }
