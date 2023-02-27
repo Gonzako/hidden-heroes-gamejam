@@ -21,7 +21,7 @@ public class SimpleCharacterMovement : MonoBehaviour
     {
         Vector3 ToMove = new Vector3(desiredSpeed.x, 0, desiredSpeed.y);
         charMove.Move(ToMove * MaxSpeed * Time.fixedDeltaTime);
-
+        charMove.Move(Vector3.down * 9.8f);
     }
 
     public void SetSpeed(InputAction.CallbackContext ctx)
