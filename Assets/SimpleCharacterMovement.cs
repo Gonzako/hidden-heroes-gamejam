@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,11 @@ public class SimpleCharacterMovement : MonoBehaviour
 
     //Representation of player input
     private Vector2 desiredSpeed;
+    private Vector3 previousMove;
+
+    public static event Action<Vector3> OnStartMoving = null;
+
+    public static event Action OnStopMoving = null;
 
     private void Start()
     {
@@ -20,8 +26,24 @@ public class SimpleCharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         Vector3 ToMove = new Vector3(desiredSpeed.x, 0, desiredSpeed.y);
-        charMove.Move(ToMove * MaxSpeed * Time.fixedDeltaTime);
+        
+        if(previousMove != ToMove)
+        {
+            if(previousMove.magnitude == 0)
+            {
+                OnStartMoving?.Invoke(ToMove);
+            }
+            else if(ToMove.magnitude == 0)
+            {
+                OnStopMoving?.Invoke();
+            }
+        }
 
+        charMove.Move(ToMove * MaxSpeed * Time.fixedDeltaTime);
+        charMove.Move(Vector3.down * 9.8f);
+
+
+        previousMove = ToMove;
     }
 
     public void SetSpeed(InputAction.CallbackContext ctx)
