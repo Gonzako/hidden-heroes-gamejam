@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 3270976705147065454}
   - component: {fileID: 3270976705147065455}
   - component: {fileID: 3270976705147065452}
+  - component: {fileID: 3270976705874225004}
   m_Layer: 10
   m_Name: PlayerLogic
   m_TagString: Untagged
@@ -213,11 +214,30 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c03280ea-624f-4821-88ba-342c77262289
     m_ActionName: New action map/PlayerMovement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/z,/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3009344a-01bc-4a7a-af71-e700a63841fe
+    m_ActionName: RestaurantMovement/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: RestaurantMovement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3270976705874225004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270976705147065448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c5c49a620ee0934ba20c4adb0e10c71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnRejectHoldedFood:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3270976705622253655
 GameObject:
   m_ObjectHideFlags: 0

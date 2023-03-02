@@ -35,6 +35,15 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
                     ""processors"": ""StickDeadzone"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""3009344a-01bc-4a7a-af71-e700a63841fe"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -180,6 +189,39 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
                     ""action"": ""PlayerMovement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8b64d54d-7aac-41f8-a861-5a965974abea"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cc269e8f-22a6-4e32-8ce6-3fcc682abff3"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1bbfcc9e-0253-4738-8f95-8d41917266db"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -189,6 +231,7 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
         // RestaurantMovement
         m_RestaurantMovement = asset.FindActionMap("RestaurantMovement", throwIfNotFound: true);
         m_RestaurantMovement_PlayerMovement = m_RestaurantMovement.FindAction("PlayerMovement", throwIfNotFound: true);
+        m_RestaurantMovement_Interact = m_RestaurantMovement.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -249,11 +292,13 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_RestaurantMovement;
     private IRestaurantMovementActions m_RestaurantMovementActionsCallbackInterface;
     private readonly InputAction m_RestaurantMovement_PlayerMovement;
+    private readonly InputAction m_RestaurantMovement_Interact;
     public struct RestaurantMovementActions
     {
         private @MainGameControls m_Wrapper;
         public RestaurantMovementActions(@MainGameControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @PlayerMovement => m_Wrapper.m_RestaurantMovement_PlayerMovement;
+        public InputAction @Interact => m_Wrapper.m_RestaurantMovement_Interact;
         public InputActionMap Get() { return m_Wrapper.m_RestaurantMovement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -266,6 +311,9 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
                 @PlayerMovement.started -= m_Wrapper.m_RestaurantMovementActionsCallbackInterface.OnPlayerMovement;
                 @PlayerMovement.performed -= m_Wrapper.m_RestaurantMovementActionsCallbackInterface.OnPlayerMovement;
                 @PlayerMovement.canceled -= m_Wrapper.m_RestaurantMovementActionsCallbackInterface.OnPlayerMovement;
+                @Interact.started -= m_Wrapper.m_RestaurantMovementActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_RestaurantMovementActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_RestaurantMovementActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_RestaurantMovementActionsCallbackInterface = instance;
             if (instance != null)
@@ -273,6 +321,9 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
                 @PlayerMovement.started += instance.OnPlayerMovement;
                 @PlayerMovement.performed += instance.OnPlayerMovement;
                 @PlayerMovement.canceled += instance.OnPlayerMovement;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -280,5 +331,6 @@ public partial class @MainGameControls : IInputActionCollection2, IDisposable
     public interface IRestaurantMovementActions
     {
         void OnPlayerMovement(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
