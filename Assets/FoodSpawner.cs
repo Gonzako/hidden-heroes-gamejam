@@ -12,7 +12,10 @@ public class FoodSpawner : MonoBehaviour
 
     private void KitchenOrderer_OnOrderFood(GameObject obj)
     {
-        Instantiate(obj, this.transform.position,Quaternion.identity);
+        Debug.Log("test");
+        var posToSpawn = this.transform.position + Random.insideUnitSphere;
+        posToSpawn.y = transform.position.y;
+        Instantiate(obj, posToSpawn,Quaternion.identity);
     }
 
     private void OnDisable()
