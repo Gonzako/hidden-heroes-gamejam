@@ -6,6 +6,8 @@ public class PlayerAnimationController : MonoBehaviour
 {
     [SerializeField] Animator Granny;
 
+    private bool moving = false;
+
     private void OnDisable()
     {
         SimpleCharacterMovement.OnStartMoving -= SimpleCharacterMovement_OnStartMoving;
@@ -20,12 +22,49 @@ public class PlayerAnimationController : MonoBehaviour
 
     private void SimpleCharacterMovement_OnStopMoving()
     {
-        Granny.Play("Dwarf Idle");
+        moving = false;
+        if (FoodPickupAndServe.IsHolding)
+        {
+
+            Granny.Play("Pole Walking");
+            Granny.speed = 0.1f;
+        }
+        else
+        {
+            Granny.speed = 1f;
+            Granny.Play("Dwarf Idle");
+        }
     }
 
     private void SimpleCharacterMovement_OnStartMoving(Vector3 obj)
     {
-        Granny.Play("Female Walk");
+        moving = true;
+        Granny.speed = 1f;
+        if (FoodPickupAndServe.IsHolding)
+        {
+
+            Granny.Play("Pole Walking");
+        }
+        else
+        {
+
+            Granny.Play("Female Walk");
+        }
+        
+    }
+
+    public void SetHoldAnim(bool isHolding)
+    {
+        if (FoodPickupAndServe.IsHolding)
+        {
+            Granny.speed = moving ? 1f : 0.1f;
+            Granny.Play("Pole Walking");
+        }
+        else
+        {
+
+            Granny.Play("Female Walk");
+        }
         
     }
 }

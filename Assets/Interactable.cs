@@ -6,13 +6,20 @@ public class Interactable : MonoBehaviour
 {
     public InteractableType pickupType;
     protected FoodPickupAndServe targetPickup;
-    public virtual void TriggerInteract()
+    private bool pickedUp = false;
+    public void TriggerInteract()
     {
-
+        pickedUp = true;
+        GetComponent<Collider>().enabled = false;
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (pickedUp)
+        {
+            return;
+        }
         var pick = other.GetComponent<FoodPickupAndServe>();
         if (pick != null)
         {
@@ -23,6 +30,10 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (pickedUp)
+        {
+            return;
+        }
         var pick = other.GetComponent<FoodPickupAndServe>();
         if (pick != null)
         {

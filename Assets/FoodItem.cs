@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class FoodItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ServableFood TargetFood;
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+public enum ServableFood
+{
+    Gazpacho, FriedRice, Kebab, Pasta, Salad
 }

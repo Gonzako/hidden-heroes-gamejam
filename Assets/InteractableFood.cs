@@ -4,10 +4,5 @@ using UnityEngine;
 
 public class InteractableFood : Interactable
 {
-    public override void TriggerInteract()
-    {
-
-    }
-
 
 }
