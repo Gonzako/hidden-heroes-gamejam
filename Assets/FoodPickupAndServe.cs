@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using DG.Tweening;
 
 public class FoodPickupAndServe : MonoBehaviour
 {
@@ -31,14 +32,12 @@ public class FoodPickupAndServe : MonoBehaviour
 
     public void AllowInteract(Interactable target)
     {
-        Debug.Log(target.transform.parent.name + " pickable.");
         if(target.pickupType == InteractableType.Food)
         {
 
             FoodInteractables.Insert(0, target);
             if (FoodInteractables.Count == 1)
             {
-                Debug.Log("test");
                 OnEnablePickupPrompt.Invoke();
             }
         }
@@ -46,6 +45,10 @@ public class FoodPickupAndServe : MonoBehaviour
         {
 
             TableInteractables.Insert(0, target);
+            if (TableInteractables.Count == 1)
+            {
+                OnEnablePickupPrompt.Invoke();
+            }
         }
     } 
 
@@ -87,7 +90,20 @@ public class FoodPickupAndServe : MonoBehaviour
                 Debug.Log("Food served!");
 
                 HeldFood.transform.parent.parent = null;
+                var dish = HeldFood.transform.parent.GetComponentInChildren<FoodItem>();
+                dish.transform.parent = null;
+                dish.transform.DOMove(TableInteractables[0].transform.position, 0.3f).SetEase(Ease.OutQuint);
+                Destroy(dish.gameObject, 5f);
+                dish.transform.parent = TableInteractables[0].transform;
+                var rbs = HeldFood.transform.parent.GetComponentsInChildren<Rigidbody>();
                 Destroy(HeldFood.transform.parent.gameObject, 1f);
+                for (int i = 0; i < rbs.Length; i++)
+                {
+                    rbs[i].isKinematic = false;
+                    rbs[i].velocity = Random.insideUnitSphere;
+                }
+
+                HeldFood.transform.parent.parent = null;
                 //Serve logic
             }
             else
@@ -114,6 +130,7 @@ public class FoodPickupAndServe : MonoBehaviour
             //Pickup Logic
             var target = FoodInteractables[0].transform.parent;
             target.parent = PickupPoint;
+            target.forward = PickupPoint.forward;
             target.localPosition = Vector3.zero;
             HeldFood = FoodInteractables[0];
             OnStartHolding.Invoke();
