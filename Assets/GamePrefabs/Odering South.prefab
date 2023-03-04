@@ -1715,8 +1715,8 @@ MonoBehaviour:
   StartRotation: {x: -0, y: 0, z: 0}
   StartScale: {x: 1, y: 1, z: 1}
   StartAlpha: 1
-  AutoHideAfterShow: 0
-  AutoHideAfterShowDelay: 3
+  AutoHideAfterShow: 1
+  AutoHideAfterShowDelay: 2
   AutoSelectButtonAfterShow: 0
   BehaviorAtStart: 1
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}

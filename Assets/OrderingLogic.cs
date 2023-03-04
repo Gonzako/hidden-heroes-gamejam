@@ -43,7 +43,6 @@ public class OrderingLogic : MonoBehaviour
         }
         ReactionView.Show();
         OrderView.Hide();
-        StartCoroutine(DelayedHide());
         Invoke("TurnOffClient", 5f);
         StartCoroutine(OrderingSpawn());
     }
@@ -65,9 +64,4 @@ public class OrderingLogic : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    private IEnumerator DelayedHide()
-    {
-        yield return new WaitForSeconds(2.5f);
-        OrderView.Hide();
-    }
 }
