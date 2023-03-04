@@ -95,6 +95,7 @@ public class FoodPickupAndServe : MonoBehaviour
                 dish.transform.DOMove(TableInteractables[0].transform.position, 0.3f).SetEase(Ease.OutQuint);
                 Destroy(dish.gameObject, 5f);
                 dish.transform.parent = TableInteractables[0].transform;
+                TableInteractables[0].GetComponentInParent<OrderingLogic>().RecieveFood(dish);
                 var rbs = HeldFood.transform.parent.GetComponentsInChildren<Rigidbody>();
                 Destroy(HeldFood.transform.parent.gameObject, 1f);
                 for (int i = 0; i < rbs.Length; i++)
