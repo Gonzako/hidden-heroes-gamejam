@@ -1580,6 +1580,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 799799157}
     m_Modifications:
+    - target: {fileID: 4946113316989168323, guid: 11b1b655d4a704044bb6412a998b5a97,
+        type: 3}
+      propertyPath: m_Name
+      value: Gazpacho
+      objectReference: {fileID: 0}
     - target: {fileID: 8293966463470586264, guid: 11b1b655d4a704044bb6412a998b5a97,
         type: 3}
       propertyPath: m_Name
