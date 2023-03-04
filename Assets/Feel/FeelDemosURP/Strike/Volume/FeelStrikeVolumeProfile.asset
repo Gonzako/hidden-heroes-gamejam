@@ -59,7 +59,7 @@ MonoBehaviour:
     m_Value: 1
   cropToFit:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
 --- !u!114 &-7011558710299706105
 MonoBehaviour:
   m_ObjectHideFlags: 3
