@@ -1,5 +1,181 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9040335816374806191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: cute theme
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: cute theme
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -33.7
+    MaxValue: -33.7
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 1
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 89329ba292378cf46bf494f75fd88e2e, type: 3}
+    Weight: 1
+--- !u!114 &-6839691427912132605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: openMenu
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: openMenu
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -22.7
+    MaxValue: -22.7
+  Pitch:
+    MinValue: -1.8
+    MaxValue: 2.1
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 10f64b31342317346b7cf0fe6e9d5ec7, type: 3}
+    Weight: 1
+--- !u!114 &-4664535244198492252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: SwishSpeachBubble
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: SwishSpeachBubble
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -35.2
+    MaxValue: -35.2
+  Pitch:
+    MinValue: -3.5
+    MaxValue: 4.7
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 2e913f6552d90744bb13eb7d1b685b5c, type: 3}
+    Weight: 1
+--- !u!114 &-2435149471166199906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: Ambience, Restaurant & Bar, Interior, Restaurant, Cutlery, People, Nandos,
+    England SND67648 1
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: Ambience, Restaurant & Bar, Interior, Restaurant, Cutlery, People, Nandos,
+    England SND67648 1
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -37.3
+    MaxValue: -37.3
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 1
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 5bce5414fd7f9cb468343b91061a833a, type: 3}
+    Weight: 1
+--- !u!114 &-1805875834644620639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: anger
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: anger
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -25.2
+    MaxValue: -25.2
+  Pitch:
+    MinValue: 0
+    MaxValue: 5.2
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 83a58d1af7bee7b4fb6e28af96f3953c, type: 3}
+    Weight: 1
+--- !u!114 &-1332048115979971979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: happy
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: happy
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -29.4
+    MaxValue: -29.4
+  Pitch:
+    MinValue: 3.2
+    MaxValue: 9.4
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 73b9609e25eab9e44aa72c962c228ede, type: 3}
+    Weight: 1
 --- !u!114 &-1046038944577203879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,6 +203,64 @@ MonoBehaviour:
   ResetSequenceAfterInactiveTime: 0
   SequenceResetTime: 5
   Sounds: []
+--- !u!114 &-637175367011687232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: veryHappy
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: veryHappy
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -27.4
+    MaxValue: -27.4
+  Pitch:
+    MinValue: 2.6
+    MaxValue: 7.3
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 5463d9a2e6539724e859a3c55d806c64, type: 3}
+    Weight: 1
+--- !u!114 &-305756470100257300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: hmmm
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: hmmm
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 78a1b486318781b45a87ee8df14ce3c7, type: 3}
+    Weight: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,13 +278,92 @@ MonoBehaviour:
     type: 2}
   SoundNames:
   - No Sound
+  - Ambience, Restaurant & Bar, Interior, Restaurant, Cutlery, People, Nandos, England
+    SND67648 1
+  - anger
   - Animals, Dog, Bark, Exterior, Big Dog, Howling, Footsteps, Courtyard, Close SND46323
   - Beeps, Appliance, IRobot Roomba E5 Robot Vacuum Cleaner Battery Low SND77823
+  - closeMenu
+  - cute theme
+  - happy
+  - hmmm
   - No Sound
+  - openMenu
+  - selectFoodItem
+  - SwishSpeachBubble
+  - veryHappy
   Database:
   - {fileID: -1046038944577203879}
+  - {fileID: -2435149471166199906}
+  - {fileID: -1805875834644620639}
   - {fileID: 8906989414455161862}
   - {fileID: 8808804665503477073}
+  - {fileID: 6509333465993929748}
+  - {fileID: -9040335816374806191}
+  - {fileID: -1332048115979971979}
+  - {fileID: -305756470100257300}
+  - {fileID: -6839691427912132605}
+  - {fileID: 2666882687126017833}
+  - {fileID: -4664535244198492252}
+  - {fileID: -637175367011687232}
+--- !u!114 &2666882687126017833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: selectFoodItem
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: selectFoodItem
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -16.3
+    MaxValue: -16.3
+  Pitch:
+    MinValue: -0.9
+    MaxValue: 0.6
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 3d36f11ecebc66b47814fdf07355c644, type: 3}
+    Weight: 1
+--- !u!114 &6509333465993929748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: closeMenu
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: closeMenu
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: 0
+    MaxValue: 0
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: cca7eefb4d8bded47a1b09a5552e4baf, type: 3}
+    Weight: 1
 --- !u!114 &8808804665503477073
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -401,6 +401,16 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8293966463470586265}
     m_Modifications:
+    - target: {fileID: 920998732025514706, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: SwishSpeachBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 920998732025514706, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     - target: {fileID: 2597053673444781029, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
       propertyPath: m_Name
@@ -484,6 +494,16 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8293966463470586265}
     m_Modifications:
+    - target: {fileID: 1147442855307324659, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: SwishSpeachBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147442855307324659, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     - target: {fileID: 4952446575903445848, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
         type: 3}
       propertyPath: m_RootOrder
@@ -764,6 +784,16 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8293966463470586265}
     m_Modifications:
+    - target: {fileID: 920998732025514706, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: SwishSpeachBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 920998732025514706, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     - target: {fileID: 2597053673444781029, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
       propertyPath: m_Name
@@ -847,6 +877,16 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 8293966463470586265}
     m_Modifications:
+    - target: {fileID: 1147442855307324659, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: SwishSpeachBubble
+      objectReference: {fileID: 0}
+    - target: {fileID: 1147442855307324659, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     - target: {fileID: 4952446575903445848, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
         type: 3}
       propertyPath: m_RootOrder
