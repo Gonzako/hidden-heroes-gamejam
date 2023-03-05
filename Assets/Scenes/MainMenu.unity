@@ -14161,6 +14161,9 @@ GameObject:
   - component: {fileID: 1486993289}
   - component: {fileID: 1486993291}
   - component: {fileID: 1486993290}
+  - component: {fileID: 1486993294}
+  - component: {fileID: 1486993293}
+  - component: {fileID: 1486993292}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -14226,6 +14229,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486993288}
   m_CullTransparentMesh: 1
+--- !u!114 &1486993292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486993288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d95775d97178a45ad9eec1f9ec2e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToExecuteOnDelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 948831426}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: W
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1486993293}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1486993293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486993288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d95775d97178a45ad9eec1f9ec2e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToExecuteOnDelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 948831426}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Z
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1486993292}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1486993294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486993288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4937297a8ddf06c409fdd0f19ec4f7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGameObjectEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1486993293}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 948831426}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: W
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1506500553
 GameObject:
   m_ObjectHideFlags: 0
@@ -20319,6 +20439,9 @@ GameObject:
   - component: {fileID: 2114892343}
   - component: {fileID: 2114892345}
   - component: {fileID: 2114892344}
+  - component: {fileID: 2114892348}
+  - component: {fileID: 2114892347}
+  - component: {fileID: 2114892346}
   m_Layer: 0
   m_Name: arrow
   m_TagString: Untagged
@@ -20384,6 +20507,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114892342}
   m_CullTransparentMesh: 1
+--- !u!114 &2114892346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114892342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d95775d97178a45ad9eec1f9ec2e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToExecuteOnDelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2114892347}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1997728676}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: A
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2114892347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114892342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d95775d97178a45ad9eec1f9ec2e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToExecuteOnDelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2114892346}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1997728676}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Q
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2114892348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114892342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4937297a8ddf06c409fdd0f19ec4f7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGameObjectEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2114892347}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1997728676}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: A
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2134082639
 GameObject:
   m_ObjectHideFlags: 0
