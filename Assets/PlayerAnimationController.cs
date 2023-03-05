@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerAnimationController : MonoBehaviour
 {
     [SerializeField] Animator Granny;
+
+    public UnityEvent OnStartMoving;
+    public UnityEvent OnStopMoving;
 
     private bool moving = false;
 
@@ -23,6 +27,7 @@ public class PlayerAnimationController : MonoBehaviour
     private void SimpleCharacterMovement_OnStopMoving()
     {
         moving = false;
+        OnStopMoving.Invoke();
         if (FoodPickupAndServe.IsHolding)
         {
 
@@ -40,6 +45,7 @@ public class PlayerAnimationController : MonoBehaviour
     {
         moving = true;
         Granny.speed = 1f;
+        OnStartMoving.Invoke();
         if (FoodPickupAndServe.IsHolding)
         {
 
