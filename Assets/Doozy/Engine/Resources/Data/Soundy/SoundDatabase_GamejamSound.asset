@@ -16,8 +16,8 @@ MonoBehaviour:
   SoundName: cute theme
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -33.7
-    MaxValue: -33.7
+    MinValue: -39.3
+    MaxValue: -39.3
   Pitch:
     MinValue: 0
     MaxValue: 0
@@ -45,8 +45,8 @@ MonoBehaviour:
   SoundName: openMenu
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -29.9
-    MaxValue: -29.9
+    MinValue: -37.7
+    MaxValue: -37.7
   Pitch:
     MinValue: -1.8
     MaxValue: 2.1
@@ -105,8 +105,8 @@ MonoBehaviour:
     England SND67648 1
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -37.3
-    MaxValue: -37.3
+    MinValue: -47.2
+    MaxValue: -47.2
   Pitch:
     MinValue: 0
     MaxValue: 0
@@ -163,8 +163,8 @@ MonoBehaviour:
   SoundName: happy
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -36.8
-    MaxValue: -36.8
+    MinValue: -41.4
+    MaxValue: -41.4
   Pitch:
     MinValue: 3.2
     MaxValue: 9.4
@@ -219,8 +219,8 @@ MonoBehaviour:
   SoundName: veryHappy
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -27.4
-    MaxValue: -27.4
+    MinValue: -35.1
+    MaxValue: -35.1
   Pitch:
     MinValue: 2.6
     MaxValue: 7.3
@@ -322,8 +322,8 @@ MonoBehaviour:
   SoundName: selectFoodItem
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -28.4
-    MaxValue: -28.4
+    MinValue: -36.1
+    MaxValue: -36.1
   Pitch:
     MinValue: -0.9
     MaxValue: 0.6
@@ -351,8 +351,8 @@ MonoBehaviour:
   SoundName: closeMenu
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -32.4
-    MaxValue: -32.4
+    MinValue: -37.3
+    MaxValue: -37.3
   Pitch:
     MinValue: 0
     MaxValue: 3.8
