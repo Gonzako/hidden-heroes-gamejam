@@ -87,6 +87,35 @@ MonoBehaviour:
   Sounds:
   - AudioClip: {fileID: 8300000, guid: 10f64b31342317346b7cf0fe6e9d5ec7, type: 3}
     Weight: 1
+--- !u!114 &-6687463832305384771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: foot steps
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: foot steps
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -34.5
+    MaxValue: -34.5
+  Pitch:
+    MinValue: -4.7
+    MaxValue: 7.7
+  SpatialBlend: 0
+  Loop: 1
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: bc65004df620bc840bd03f13b601b17e, type: 3}
+    Weight: 1
 --- !u!114 &-4664535244198492252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +144,35 @@ MonoBehaviour:
   SequenceResetTime: 5
   Sounds:
   - AudioClip: {fileID: 8300000, guid: 2e913f6552d90744bb13eb7d1b685b5c, type: 3}
+    Weight: 1
+--- !u!114 &-3732200759827185219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: MenuMusic2
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: MenuMusic2
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -31.9
+    MaxValue: -31.9
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: aa9138115a422b249aa9a0deb97c26e1, type: 3}
     Weight: 1
 --- !u!114 &-2435149471166199906
 MonoBehaviour:
@@ -346,6 +404,8 @@ MonoBehaviour:
   - goodPop
   - happy
   - hmmm
+  - MenuMusic
+  - MenuMusic2
   - No Sound
   - openMenu
   - poofWithPop
@@ -364,12 +424,44 @@ MonoBehaviour:
   - {fileID: -980566179358896501}
   - {fileID: -1332048115979971979}
   - {fileID: -305756470100257300}
+  - {fileID: 1608664420741638470}
+  - {fileID: -3732200759827185219}
   - {fileID: -6839691427912132605}
   - {fileID: -7000795076321903125}
   - {fileID: 7033644338532993695}
   - {fileID: 2666882687126017833}
   - {fileID: -4664535244198492252}
   - {fileID: -637175367011687232}
+  - {fileID: -6687463832305384771}
+--- !u!114 &1608664420741638470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: MenuMusic
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: MenuMusic
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -26.2
+    MaxValue: -26.2
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 22cf8c4e2eef89940971259798cf6272, type: 3}
+    Weight: 1
 --- !u!114 &2666882687126017833
 MonoBehaviour:
   m_ObjectHideFlags: 0
