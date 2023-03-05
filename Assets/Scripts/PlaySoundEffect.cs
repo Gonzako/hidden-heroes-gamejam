@@ -20,6 +20,6 @@ public class PlaySoundEffect : MonoBehaviour
 
     public void PlayWoosh()
     {
-        audioS.PlayOneShot(woosh);
+        audioS.PlayOneShot(woosh, 0.5f);
     }
 }
