@@ -10,7 +10,7 @@ public class ClientSpawnThrottler : MonoBehaviour
     //public int ClientsPerTimeAllowed = 1;
     private List<OrderingLogic> SpawnedClients = new List<OrderingLogic>();
 
-    private float TimeBetweenSpawnAdd = 60;
+    public float TimeBetweenSpawnAdd = 60;
     private float NextTime;
     private void OnEnable()
     {
@@ -55,6 +55,8 @@ public class ClientSpawnThrottler : MonoBehaviour
                 AreMoreClientsAllowed = true;
             }
             NextTime = Time.time + TimeBetweenSpawnAdd;
+            TimeBetweenSpawnAdd -= 10f;
+            TimeBetweenSpawnAdd = Mathf.Clamp(TimeBetweenSpawnAdd, 5f, 20000f);
         }
     }
 }

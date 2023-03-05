@@ -4009,6 +4009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxClientsAllowed: 5
+  TimeBetweenSpawnAdd: 60
 --- !u!4 &784228956
 Transform:
   m_ObjectHideFlags: 0
@@ -4036,6 +4037,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Odering South (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071810977160988380, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9834136
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071810977160988380, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071810977160988380, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.18137747
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071810977160988380, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3071810977160988380, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -20.9
       objectReference: {fileID: 0}
     - target: {fileID: 3432242023785521742, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
@@ -4095,7 +4121,7 @@ PrefabInstance:
     - target: {fileID: 3446472988254550791, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.144
+      value: -0.443
       objectReference: {fileID: 0}
     - target: {fileID: 3446472988254550791, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
@@ -4105,7 +4131,7 @@ PrefabInstance:
     - target: {fileID: 3446472988254550791, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.907
+      value: -1.456
       objectReference: {fileID: 0}
     - target: {fileID: 4902116838907160442, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
@@ -4140,7 +4166,7 @@ PrefabInstance:
     - target: {fileID: 9038771705443010268, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.56
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 9038771705443010268, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
@@ -4292,6 +4318,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 821850399}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &832107446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 832107448}
+  - component: {fileID: 832107447}
+  m_Layer: 0
+  m_Name: KitchenFoodSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &832107447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832107446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea63de66f55cd8438dcccbf8302a732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &832107448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832107446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.61, y: 1.1, z: 7.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &849230886
 GameObject:
   m_ObjectHideFlags: 0
@@ -9167,6 +9237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Odering West
       objectReference: {fileID: 0}
+    - target: {fileID: 6205527781557127527, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5619f2f985dbd48ae3c2996daf9ba4, type: 3}
@@ -9998,7 +10073,6 @@ GameObject:
   - component: {fileID: 8871577160211793322}
   - component: {fileID: 2566946246740322006}
   - component: {fileID: 3228208974068753624}
-  - component: {fileID: 8871577160211793323}
   m_Layer: 0
   m_Name: Tray
   m_TagString: Untagged
@@ -15158,18 +15232,6 @@ Transform:
   m_Father: {fileID: 543450652758774266}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8871577160211793323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365014829665358229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea63de66f55cd8438dcccbf8302a732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8881976126860527469
 GameObject:
   m_ObjectHideFlags: 0
