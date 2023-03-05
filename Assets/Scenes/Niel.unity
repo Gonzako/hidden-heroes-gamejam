@@ -10533,19 +10533,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1000803182, guid: 5d1ee609c841d894b9717609e275a86c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3270976705095517376, guid: 5d1ee609c841d894b9717609e275a86c,
         type: 3}
       propertyPath: m_Name
       value: PlayerMaster
-      objectReference: {fileID: 0}
-    - target: {fileID: 3270976705095517376, guid: 5d1ee609c841d894b9717609e275a86c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3270976705095517377, guid: 5d1ee609c841d894b9717609e275a86c,
         type: 3}
