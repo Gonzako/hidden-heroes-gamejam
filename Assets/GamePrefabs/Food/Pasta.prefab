@@ -182,19 +182,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8787730773407337488}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1835154511539865370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8445695459199791425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0198f02b7c7fc624ca394d2e2001b5fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetFood: 1
 --- !u!54 &6368269433304029972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -211,6 +198,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1835154511539865370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8445695459199791425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0198f02b7c7fc624ca394d2e2001b5fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetFood: 3
 --- !u!4 &9114990879039024123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f605d91170baa794cace6cc52c2f6b8a,

@@ -248,8 +248,8 @@ MonoBehaviour:
   SoundName: goodPop
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -24.1
-    MaxValue: -24.1
+    MinValue: -34.5
+    MaxValue: -34.5
   Pitch:
     MinValue: -4.2
     MaxValue: 4.8
