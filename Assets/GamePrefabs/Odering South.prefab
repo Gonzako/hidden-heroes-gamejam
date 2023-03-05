@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 3071810977160988380}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &6765646724628284840
 MonoBehaviour:
@@ -1317,8 +1317,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3071810977160988380}
+  - component: {fileID: 6282271293384731680}
+  - component: {fileID: 2479194763661153000}
   m_Layer: 0
-  m_Name: GrannyHolder
+  m_Name: ClientHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1349,6 +1351,52 @@ Transform:
   m_Father: {fileID: 3432242023785521742}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6282271293384731680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585629181639418994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4937297a8ddf06c409fdd0f19ec4f7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnGameObjectEnable:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2479194763661153000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4585629181639418994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd9cd6405884bd4da951e35e778a1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+  TestData:
+    SoundSource: 0
+    DatabaseName: General
+    SoundName: No Sound
+    AudioClip: {fileID: 0}
+    OutputAudioMixerGroup: {fileID: 0}
 --- !u!1 &5421357033433952872
 GameObject:
   m_ObjectHideFlags: 0

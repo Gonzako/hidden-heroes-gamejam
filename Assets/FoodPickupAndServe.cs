@@ -85,14 +85,17 @@ public class FoodPickupAndServe : MonoBehaviour
         }
         if (HoldingItem)
         {
+            HeldFood.transform.parent.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             if (IsTableNearby)
             {
                 Debug.Log("Food served!");
 
                 HeldFood.transform.parent.parent = null;
                 var dish = HeldFood.transform.parent.GetComponentInChildren<FoodItem>();
+                
                 dish.transform.parent = null;
                 dish.transform.DOMove(TableInteractables[0].transform.position, 0.3f).SetEase(Ease.OutQuint);
+                
                 Destroy(dish.gameObject, 5f);
                 dish.transform.parent = TableInteractables[0].transform;
                 TableInteractables[0].GetComponentInParent<OrderingLogic>().RecieveFood(dish);
