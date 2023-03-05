@@ -29,6 +29,35 @@ MonoBehaviour:
   Sounds:
   - AudioClip: {fileID: 8300000, guid: 89329ba292378cf46bf494f75fd88e2e, type: 3}
     Weight: 1
+--- !u!114 &-7000795076321903125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: poofWithPop
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: poofWithPop
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -29.9
+    MaxValue: -29.9
+  Pitch:
+    MinValue: -5.4
+    MaxValue: 4.5
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 09775a84a6ac6b340841b7ff44a3583f, type: 3}
+    Weight: 1
 --- !u!114 &-6839691427912132605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +232,35 @@ MonoBehaviour:
   ResetSequenceAfterInactiveTime: 0
   SequenceResetTime: 5
   Sounds: []
+--- !u!114 &-980566179358896501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: goodPop
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: goodPop
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -24.1
+    MaxValue: -24.1
+  Pitch:
+    MinValue: -4.2
+    MaxValue: 4.8
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 375aa51ee985fe14abf419a0b69f1fbd, type: 3}
+    Weight: 1
 --- !u!114 &-637175367011687232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,10 +343,13 @@ MonoBehaviour:
   - Beeps, Appliance, IRobot Roomba E5 Robot Vacuum Cleaner Battery Low SND77823
   - closeMenu
   - cute theme
+  - goodPop
   - happy
   - hmmm
   - No Sound
   - openMenu
+  - poofWithPop
+  - PopSpawn
   - selectFoodItem
   - SwishSpeachBubble
   - veryHappy
@@ -300,9 +361,12 @@ MonoBehaviour:
   - {fileID: 8808804665503477073}
   - {fileID: 6509333465993929748}
   - {fileID: -9040335816374806191}
+  - {fileID: -980566179358896501}
   - {fileID: -1332048115979971979}
   - {fileID: -305756470100257300}
   - {fileID: -6839691427912132605}
+  - {fileID: -7000795076321903125}
+  - {fileID: 7033644338532993695}
   - {fileID: 2666882687126017833}
   - {fileID: -4664535244198492252}
   - {fileID: -637175367011687232}
@@ -363,6 +427,35 @@ MonoBehaviour:
   SequenceResetTime: 5
   Sounds:
   - AudioClip: {fileID: 8300000, guid: cca7eefb4d8bded47a1b09a5552e4baf, type: 3}
+    Weight: 1
+--- !u!114 &7033644338532993695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: PopSpawn
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: PopSpawn
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -28
+    MaxValue: -28
+  Pitch:
+    MinValue: -5.4
+    MaxValue: 6.2
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 12f954de2e13b20408234ae73ed13048, type: 3}
     Weight: 1
 --- !u!114 &8808804665503477073
 MonoBehaviour:
