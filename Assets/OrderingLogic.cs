@@ -11,12 +11,14 @@ public class OrderingLogic : MonoBehaviour
     public List<Transform> ClientsToShow;
     public static event Action<OrderingLogic> OnClientSpawn = null;
     public static event Action<OrderingLogic> OnClientDespawn = null;
+    public static event Action OnClientSatisfied = null;
     [SerializeField]
     private UIView ReactionView;
     [SerializeField]
     private UIView OrderView;
     private ServableFood DesiredDish;
     private float TimeWhenCreated;
+
     private void Start()
     {
         TurnOffClient();
@@ -46,6 +48,7 @@ public class OrderingLogic : MonoBehaviour
         if(dish.TargetFood == DesiredDish)
         {
             ReactionToShow[UnityEngine.Random.Range(0, 2)].gameObject.SetActive(true);
+            OnClientSatisfied?.Invoke();
         }
         else
         {
