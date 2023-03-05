@@ -19,9 +19,14 @@ public class OrderingLogic : MonoBehaviour
     private ServableFood DesiredDish;
     private float TimeWhenCreated;
 
+    private void Awake()
+    {
+
+        TurnOffClient();
+    }
+
     private void Start()
     {
-        TurnOffClient();
         StartCoroutine(OrderingSpawn());
     }
 

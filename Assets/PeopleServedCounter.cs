@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PeopleServedCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string textToAddLeft;
+    public string textToAddRight;
+    private int counter = 0;
+
+    private void OnEnable()
     {
-        
+        OrderingLogic.OnClientSatisfied += OrderingLogic_OnClientSatisfied;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OrderingLogic_OnClientSatisfied()
     {
-        
+        counter++;
+        GetComponent<TextMeshProUGUI>().text = textToAddLeft + " " + counter.ToString() + " " + textToAddRight;
     }
+
+    private void OnDisable()
+    {
+        OrderingLogic.OnClientSatisfied -= OrderingLogic_OnClientSatisfied;
+    }
+    
+
 }

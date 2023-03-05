@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 724485482}
   - component: {fileID: 724485481}
   - component: {fileID: 724485483}
+  - component: {fileID: 3385221496809400672}
   m_Layer: 0
   m_Name: Progressor
   m_TagString: Untagged
@@ -93,6 +94,45 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3385221496809400672}
+        m_TargetAssemblyTypeName: delayedGameEvent, Assembly-CSharp
+        m_MethodName: waitSecondsThenExecute
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 300
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3385221496809400672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724485480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d95775d97178a45ad9eec1f9ec2e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToExecuteOnDelay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1217281101665770941}
+        m_TargetAssemblyTypeName: Doozy.Engine.UI.UIView, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -565,6 +605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf2966e2396d8f46b7ecf62dfa8438d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textToAddLeft: Iaia made
+  textToAddRight: people happy today
 --- !u!1 &1217281100718185506
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +792,7 @@ GameObject:
   - component: {fileID: 1217281100941060704}
   - component: {fileID: 1217281100941060719}
   - component: {fileID: 1217281100941060718}
+  - component: {fileID: 3975333638135153204}
   m_Layer: 5
   m_Name: DoAnotherShift
   m_TagString: Untagged
@@ -1740,7 +1783,19 @@ MonoBehaviour:
         CustomSortingLayer: Default
       Event:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 3975333638135153204}
+            m_TargetAssemblyTypeName: Doozy.Engine.SceneManagement.SceneLoader, Assembly-CSharp
+            m_MethodName: LoadSceneAsync
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       GameEvents: []
       SoundData:
         SoundSource: 0
@@ -3153,6 +3208,74 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 1
   TextLabel: {fileID: 0}
+--- !u!114 &3975333638135153204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217281100941060716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81283a90a06a4d6c8a779a8005142fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllowSceneActivation: 1
+  DebugMode: 0
+  LoadBehavior:
+    OnLoadScene:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+    OnSceneLoaded:
+      AnimatorEvents: []
+      Effect:
+        AutoSort: 1
+        Behavior: 0
+        CustomSortingOrder: 0
+        SortingSteps: 1
+        ParticleSystem: {fileID: 0}
+        StopBehavior: 1
+        CustomSortingLayer: Default
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+      GameEvents: []
+      SoundData:
+        SoundSource: 0
+        DatabaseName: General
+        SoundName: No Sound
+        AudioClip: {fileID: 0}
+        OutputAudioMixerGroup: {fileID: 0}
+  GetSceneBy: 1
+  LoadSceneMode: 0
+  OnProgressChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInverseProgressChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  Progressor: {fileID: 0}
+  SceneActivationDelay: 0
+  SceneBuildIndex: 1
+  SceneName: 
+  SelfDestructAfterSceneLoaded: 0
 --- !u!1 &1217281101052523890
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,7 +4597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1217281101665770938
 RectTransform:
   m_ObjectHideFlags: 0
