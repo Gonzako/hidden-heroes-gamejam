@@ -10,11 +10,14 @@ public class ClientSpawnThrottler : MonoBehaviour
     //public int ClientsPerTimeAllowed = 1;
     private List<OrderingLogic> SpawnedClients = new List<OrderingLogic>();
 
+    private float TimeBetweenSpawnAdd = 60;
+    private float NextTime;
     private void OnEnable()
     {
         AreMoreClientsAllowed = true;
         OrderingLogic.OnClientDespawn += OrderingLogic_OnClientDespawn;
         OrderingLogic.OnClientSpawn += OrderingLogic_OnClientSpawn;
+        NextTime = Time.time + TimeBetweenSpawnAdd;
     }
 
     private void OrderingLogic_OnClientSpawn(OrderingLogic obj)
@@ -40,5 +43,18 @@ public class ClientSpawnThrottler : MonoBehaviour
 
         OrderingLogic.OnClientDespawn -= OrderingLogic_OnClientDespawn;
         OrderingLogic.OnClientSpawn -= OrderingLogic_OnClientSpawn;
+    }
+
+    private void Update()
+    {
+        if(NextTime < Time.time)
+        {
+            MaxClientsAllowed++;
+            if (MaxClientsAllowed > SpawnedClients.Count)
+            {
+                AreMoreClientsAllowed = true;
+            }
+            NextTime = Time.time + TimeBetweenSpawnAdd;
+        }
     }
 }
