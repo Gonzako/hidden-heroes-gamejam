@@ -4293,6 +4293,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     - target: {fileID: 3446472988254550791, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4307,6 +4317,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
       objectReference: {fileID: 0}
     - target: {fileID: 4902116838907160442, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
@@ -4332,6 +4352,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: veryHappy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385745300722314544, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: No Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
       objectReference: {fileID: 0}
     - target: {fileID: 9038771705443010268, guid: 0ab3151c15a74214f8ec46d61040668a,
         type: 3}
@@ -7350,6 +7395,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: veryHappy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385745300722314544, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: No Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab3151c15a74214f8ec46d61040668a, type: 3}
@@ -9733,6 +9823,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560137355362815, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560137355362815, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560137571209576, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: No Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560137950935303, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: veryHappy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560137950935303, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560138352739993, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560138352739993, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560138396657792, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9004560138396657792, guid: 4d5619f2f985dbd48ae3c2996daf9ba4,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

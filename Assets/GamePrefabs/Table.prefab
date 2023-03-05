@@ -471,6 +471,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: veryHappy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385745300722314544, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: No Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab3151c15a74214f8ec46d61040668a, type: 3}
@@ -853,6 +898,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: happy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436102215592662769, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4134229950655175334, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: veryHappy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785185398774174077, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385745300722314544, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
+      value: No Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.SoundName
+      value: anger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7933105764814865949, guid: 0ab3151c15a74214f8ec46d61040668a,
+        type: 3}
+      propertyPath: TestData.DatabaseName
+      value: GamejamSound
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

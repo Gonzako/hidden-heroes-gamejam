@@ -45,8 +45,8 @@ MonoBehaviour:
   SoundName: openMenu
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -22.7
-    MaxValue: -22.7
+    MinValue: -29.9
+    MaxValue: -29.9
   Pitch:
     MinValue: -1.8
     MaxValue: 2.1
@@ -163,8 +163,8 @@ MonoBehaviour:
   SoundName: happy
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -29.4
-    MaxValue: -29.4
+    MinValue: -36.8
+    MaxValue: -36.8
   Pitch:
     MinValue: 3.2
     MaxValue: 9.4
@@ -322,8 +322,8 @@ MonoBehaviour:
   SoundName: selectFoodItem
   IgnoreListenerPause: 1
   Volume:
-    MinValue: -16.3
-    MaxValue: -16.3
+    MinValue: -28.4
+    MaxValue: -28.4
   Pitch:
     MinValue: -0.9
     MaxValue: 0.6
@@ -351,11 +351,11 @@ MonoBehaviour:
   SoundName: closeMenu
   IgnoreListenerPause: 1
   Volume:
-    MinValue: 0
-    MaxValue: 0
+    MinValue: -32.4
+    MaxValue: -32.4
   Pitch:
     MinValue: 0
-    MaxValue: 0
+    MaxValue: 3.8
   SpatialBlend: 0
   Loop: 0
   Mode: 0
