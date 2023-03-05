@@ -9,6 +9,8 @@ public class OrderingLogic : MonoBehaviour
     public List<Transform> SpriteToSpawn;
     public List<Transform> ReactionToShow;
     public List<Transform> ClientsToShow;
+    public static event Action<OrderingLogic> OnClientSpawn = null;
+    public static event Action<OrderingLogic> OnClientDespawn = null;
     [SerializeField]
     private UIView ReactionView;
     [SerializeField]
@@ -23,12 +25,20 @@ public class OrderingLogic : MonoBehaviour
 
     private IEnumerator OrderingSpawn()
     {
-        yield return new WaitForSeconds(UnityEngine.Random.value*30f);
-        DesiredDish = (ServableFood)UnityEngine.Random.Range(0, 5);
-        SpriteToSpawn[(int)DesiredDish].gameObject.SetActive(true);
-        ClientsToShow[UnityEngine.Random.Range(0, ClientsToShow.Count)].gameObject.SetActive(true);
-        transform.GetChild(0).gameObject.SetActive(true);
-        TimeWhenCreated = Time.time;
+        yield return new WaitForSeconds(UnityEngine.Random.value * 30f);
+        if(ClientSpawnThrottler.AreMoreClientsAllowed)
+        { 
+            DesiredDish = (ServableFood)UnityEngine.Random.Range(0, 5);
+            SpriteToSpawn[(int)DesiredDish].gameObject.SetActive(true);
+            ClientsToShow[UnityEngine.Random.Range(0, ClientsToShow.Count)].gameObject.SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(true);
+            TimeWhenCreated = Time.time;
+            OnClientSpawn?.Invoke(this);
+        }
+        else
+        {
+            StartCoroutine(OrderingSpawn());
+        }
     }
 
     public void RecieveFood(FoodItem dish)
@@ -44,6 +54,7 @@ public class OrderingLogic : MonoBehaviour
         ReactionView.Show();
         OrderView.Hide();
         Invoke("TurnOffClient", 5f);
+        OnClientDespawn?.Invoke(this);
         StartCoroutine(OrderingSpawn());
     }
 
