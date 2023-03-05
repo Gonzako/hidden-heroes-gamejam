@@ -4124,12 +4124,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 69412404356175776, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f17ea3b7573db88419bd391ff3f4213a,
-        type: 3}
     - target: {fileID: 1165102327354791234, guid: 7178c0efe05cb6143b82877a63698e58,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4160,84 +4154,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2378508756446327106, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.SoundName
-      value: selectFoodItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 2378508756446327106, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.DatabaseName
-      value: GamejamSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 2979305347362902000, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Name
-      value: Gazpacho
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092098435459189437, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.SoundName
-      value: selectFoodItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 3092098435459189437, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.DatabaseName
-      value: GamejamSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 3317225373175180509, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5edaaede1e6af544e95fc3d520614e3c,
-        type: 3}
-    - target: {fileID: 3491221799083196759, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: FoodPrefab
-      value: 
-      objectReference: {fileID: 2135652963775293385, guid: 2d1f5c125e85cff4a9f8e4387e091a4a,
-        type: 3}
-    - target: {fileID: 4051975915741723059, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: FoodPrefab
-      value: 
-      objectReference: {fileID: 4975212700124438244, guid: 2c6eb87895d597340a08055f275999d0,
-        type: 3}
-    - target: {fileID: 4211910543102758584, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Name
-      value: pasta
-      objectReference: {fileID: 0}
-    - target: {fileID: 4851576777971833667, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Name
-      value: Salad
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511081549948461, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: fcab49a42bd1af544a9c7cdc8732b76a,
-        type: 3}
-    - target: {fileID: 5125511081913616534, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511081913616534, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -100
-      objectReference: {fileID: 0}
     - target: {fileID: 5125511082037047168, guid: 7178c0efe05cb6143b82877a63698e58,
         type: 3}
       propertyPath: m_Name
       value: OrderMasterCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082037047168, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5125511082037047172, guid: 7178c0efe05cb6143b82877a63698e58,
         type: 3}
@@ -4344,46 +4264,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945893, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945893, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945893, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945893, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945898, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: HideBehavior.OnStart.SoundData.SoundName
-      value: closeMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945898, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: ShowBehavior.OnStart.SoundData.SoundName
-      value: openMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945898, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: HideBehavior.OnStart.SoundData.DatabaseName
-      value: GamejamSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082582945898, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: ShowBehavior.OnStart.SoundData.DatabaseName
-      value: GamejamSound
-      objectReference: {fileID: 0}
     - target: {fileID: 5125511082712134628, guid: 7178c0efe05cb6143b82877a63698e58,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4414,32 +4294,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5125511082712134629, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Name
-      value: Arroz
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082712134635, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.SoundName
-      value: selectFoodItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082712134635, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.DatabaseName
-      value: GamejamSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125511082712134639, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: FoodPrefab
-      value: 
-      objectReference: {fileID: 4975212700124438244, guid: d0c27cafd8bb2b84f8ba73e1b115c5ff,
-        type: 3}
-    - target: {fileID: 5621582711100191083, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Name
-      value: Kebab
-      objectReference: {fileID: 0}
     - target: {fileID: 6068743463185687606, guid: 7178c0efe05cb6143b82877a63698e58,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -4469,44 +4323,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6428643379781486297, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0788e81881a9da94d8c2a8ccee1e5cf5,
-        type: 3}
-    - target: {fileID: 6509953390520543754, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: FoodPrefab
-      value: 
-      objectReference: {fileID: 4975212700124438244, guid: 8bf962e93db59aa4e86aaa5fd85a65a7,
-        type: 3}
-    - target: {fileID: 7065235216503590538, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.SoundName
-      value: selectFoodItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 7065235216503590538, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.DatabaseName
-      value: GamejamSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 7597893077875747148, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: FoodPrefab
-      value: 
-      objectReference: {fileID: 4975212700124438244, guid: e77eb5bcfb749694f888703d4f64d9e1,
-        type: 3}
-    - target: {fileID: 7673182102625504592, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.SoundName
-      value: selectFoodItem
-      objectReference: {fileID: 0}
-    - target: {fileID: 7673182102625504592, guid: 7178c0efe05cb6143b82877a63698e58,
-        type: 3}
-      propertyPath: OnClick.OnTrigger.SoundData.DatabaseName
-      value: GamejamSound
       objectReference: {fileID: 0}
     - target: {fileID: 7817910714969897908, guid: 7178c0efe05cb6143b82877a63698e58,
         type: 3}

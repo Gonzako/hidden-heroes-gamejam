@@ -3688,9 +3688,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217281101648992829}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1217281101648992816}
+        m_TargetAssemblyTypeName: Doozy.Engine.UI.UIView, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5351,7 +5351,7 @@ RectTransform:
   - {fileID: 1217281101665770938}
   - {fileID: 724485482}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
