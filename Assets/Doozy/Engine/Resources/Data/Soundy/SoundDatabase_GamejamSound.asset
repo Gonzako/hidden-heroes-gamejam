@@ -319,6 +319,35 @@ MonoBehaviour:
   Sounds:
   - AudioClip: {fileID: 8300000, guid: 375aa51ee985fe14abf419a0b69f1fbd, type: 3}
     Weight: 1
+--- !u!114 &-948484861800975816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6c631d933489d4ca7328a2a5983e10, type: 3}
+  m_Name: KitchenClock
+  m_EditorClassIdentifier: 
+  DatabaseName: GamejamSound
+  SoundName: KitchenClock
+  IgnoreListenerPause: 1
+  Volume:
+    MinValue: -21.9
+    MaxValue: -21.9
+  Pitch:
+    MinValue: 0
+    MaxValue: 0
+  SpatialBlend: 0
+  Loop: 0
+  Mode: 0
+  ResetSequenceAfterInactiveTime: 0
+  SequenceResetTime: 5
+  Sounds:
+  - AudioClip: {fileID: 8300000, guid: 099c70a6bc34aca42b36dd2c4b5fa100, type: 3}
+    Weight: 1
 --- !u!114 &-637175367011687232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +434,7 @@ MonoBehaviour:
   - goodPop
   - happy
   - hmmm
+  - KitchenClock
   - MenuMusic
   - MenuMusic2
   - No Sound
@@ -426,6 +456,7 @@ MonoBehaviour:
   - {fileID: -980566179358896501}
   - {fileID: -1332048115979971979}
   - {fileID: -305756470100257300}
+  - {fileID: -948484861800975816}
   - {fileID: 1608664420741638470}
   - {fileID: -3732200759827185219}
   - {fileID: -6839691427912132605}
