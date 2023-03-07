@@ -8,6 +8,7 @@ public class PeopleServedCounter : MonoBehaviour
     public string textToAddLeft;
     public string textToAddRight;
     private int counter = 0;
+    public TextMeshProUGUI target;
 
     private void OnEnable()
     {
@@ -17,7 +18,7 @@ public class PeopleServedCounter : MonoBehaviour
     private void OrderingLogic_OnClientSatisfied()
     {
         counter++;
-        GetComponent<TextMeshProUGUI>().text = textToAddLeft + " " + counter.ToString() + " " + textToAddRight;
+        target.text = textToAddLeft + " " + counter.ToString() + " " + textToAddRight;
     }
 
     private void OnDisable()

@@ -469,7 +469,6 @@ GameObject:
   - component: {fileID: 1217281100609678039}
   - component: {fileID: 1217281100609678025}
   - component: {fileID: 1217281100609678024}
-  - component: {fileID: 2483672114569832398}
   m_Layer: 5
   m_Name: body_text
   m_TagString: Untagged
@@ -595,20 +594,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2483672114569832398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217281100609678038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bf2966e2396d8f46b7ecf62dfa8438d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textToAddLeft: Iaia made
-  textToAddRight: people happy today!
 --- !u!1 &1217281100718185506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5191,6 +5176,7 @@ GameObject:
   - component: {fileID: 1217281101808168414}
   - component: {fileID: 1217281101808168413}
   - component: {fileID: 1217281101808168401}
+  - component: {fileID: 7669608316300225193}
   m_Layer: 5
   m_Name: MainUICanvas
   m_TagString: Untagged
@@ -5215,7 +5201,7 @@ RectTransform:
   - {fileID: 1217281101665770938}
   - {fileID: 724485482}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5296,6 +5282,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7669608316300225193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217281101808168412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf2966e2396d8f46b7ecf62dfa8438d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToAddLeft: Iaia made
+  textToAddRight: people happy today!
+  target: {fileID: 1217281100609678024}
 --- !u!1 &1217281101959395581
 GameObject:
   m_ObjectHideFlags: 0
@@ -5601,6 +5602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textToAddLeft: Iaia made
   textToAddRight: people happy today!
+  target: {fileID: 0}
 --- !u!1 &7562003700590847625
 GameObject:
   m_ObjectHideFlags: 0
