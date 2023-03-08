@@ -2605,7 +2605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531361167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.14, z: 0}
+  m_LocalPosition: {x: 3.64, y: 1.143, z: 8.122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3970,6 +3970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832107448}
   - component: {fileID: 832107447}
+  - component: {fileID: 832107449}
   m_Layer: 0
   m_Name: KitchenFoodSpawnPoint
   m_TagString: Untagged
@@ -3989,6 +3990,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea63de66f55cd8438dcccbf8302a732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnFoodOrdered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5256910220134776522}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 832107449}
+        m_TargetAssemblyTypeName: SoundPlayer, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &832107448
 Transform:
   m_ObjectHideFlags: 0
@@ -4004,6 +4032,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &832107449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832107446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd9cd6405884bd4da951e35e778a1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Label: 
+  TestData:
+    SoundSource: 0
+    DatabaseName: GamejamSound
+    SoundName: poofWithPop
+    AudioClip: {fileID: 0}
+    OutputAudioMixerGroup: {fileID: 0}
 --- !u!1 &849230886
 GameObject:
   m_ObjectHideFlags: 0
@@ -11827,6 +11874,11 @@ PrefabInstance:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5256910221300719307, guid: 29f3f9825975b5246be515eb699bc78c,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5256910221300719926, guid: 29f3f9825975b5246be515eb699bc78c,
         type: 3}
       propertyPath: m_Name
@@ -11835,6 +11887,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f3f9825975b5246be515eb699bc78c, type: 3}
+--- !u!198 &5256910220134776522 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5256910221300719307, guid: 29f3f9825975b5246be515eb699bc78c,
+    type: 3}
+  m_PrefabInstance: {fileID: 5256910220134776521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &5267636021099546499
 MeshFilter:
   m_ObjectHideFlags: 0

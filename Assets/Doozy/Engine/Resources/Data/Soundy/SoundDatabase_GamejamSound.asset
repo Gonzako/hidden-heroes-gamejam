@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Name: SoundDatabase_GamejamSound
   m_EditorClassIdentifier: 
   DatabaseName: GamejamSound
-  OutputAudioMixerGroup: {fileID: -8043403741725823881, guid: bc155dfdccec1be4780029a8bd542de5,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 7e984f512e89b60468e829489e8883e3,
     type: 2}
   SoundNames:
   - No Sound

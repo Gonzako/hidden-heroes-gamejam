@@ -10,6 +10,7 @@ public class PeopleServedCounter : MonoBehaviour
     private int counter = 0;
     public TextMeshProUGUI target;
 
+
     private void OnEnable()
     {
         OrderingLogic.OnClientSatisfied += OrderingLogic_OnClientSatisfied;
